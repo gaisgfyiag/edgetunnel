@@ -9,6 +9,7 @@ let userID = '1beb37a7-b9ec-4d5f-8282-827466f6e918';
 let proxyIP = 'ProxyIP.US.fxxk.dedyn.io'; // ProxyIP.SG.fxxk.dedyn.io ProxyIP.JP.fxxk.dedyn.io ProxyIP.KR.fxxk.dedyn.io cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org my-telegram-is-herocore.onecf.eu.org sg.cf.zhetengsha.eu.org us.cf.zhetengsha.eu.org jp.cf.zhetengsha.eu.org bpb.yousef.isegaro.com
 
 
+
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
 }
