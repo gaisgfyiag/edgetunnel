@@ -1,14 +1,12 @@
-// <!--GAMFC-->version base on commit 58686d5d125194d34a1137913b3a64ddcf55872f, time is 2024-11-27 09:26:01 UTC<!--GAMFC-END-->.
+// <!--GAMFC-->version base on commit 841ed4e9ff121dde0ed6a56ae800c2e6c4f66056, time is 2024-04-16 18:02:37 UTC<!--GAMFC-END-->.
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '34eb98c4-69a1-408c-b999-f1e29b0eaac1';
+let userID = '398888bb-3987-4116-a0c1-e3822c15749f';
 
-let proxyIP = 'ProxyIP.US.fxxk.dedyn.io'; // ProxyIP.SG.fxxk.dedyn.io ProxyIP.JP.fxxk.dedyn.io ProxyIP.KR.fxxk.dedyn.io cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org my-telegram-is-herocore.onecf.eu.org sg.cf.zhetengsha.eu.org us.cf.zhetengsha.eu.org jp.cf.zhetengsha.eu.org bpb.yousef.isegaro.com
-
-
+let proxyIP = 'ProxyIP.US.CMLiussss.net'; // ProxyIP.SG.CMLiussss.net ProxyIP.JP.CMLiussss.net ProxyIP.KR.CMLiussss.net ProxyIP.DE.tp2024.CMLiussss.net sg.ipdb.rr.nu nl.ipdb.rr.nu jp.ipdb.rr.nu us.ipdb.rr.nu sg.cf.zhetengsha.eu.org us.cf.zhetengsha.eu.org jp.cf.zhetengsha.eu.org cdn.xn--b6gac.eu.org cdn-all.xn--b6gac.eu.org
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
@@ -601,12 +599,7 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
  * @returns {string}
  */
 function getVLESSConfig(userID, hostName) {
-	const protocol = "vless";
-	const vlessMain = 
-	`${protocol}` + 
-	`://${userID}@${hostName}:443`+
-	`?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
-	
+	const vlessMain = `vless://${userID}\u0040${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`
 	return `
 ################################################################
 v2ray
